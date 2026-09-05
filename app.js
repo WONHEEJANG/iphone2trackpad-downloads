@@ -26,7 +26,12 @@ tabs.forEach((tab, index) => {
 });
 
 const userAgent = `${navigator.userAgent} ${navigator.platform}`.toLowerCase();
-const platform = userAgent.includes("win") ? "windows" : userAgent.includes("mac") ? "mac" : null;
+const isAppleMobile = /iphone|ipad|ipod/.test(userAgent);
+const platform = userAgent.includes("win")
+  ? "windows"
+  : !isAppleMobile && userAgent.includes("mac")
+    ? "mac"
+    : null;
 
 if (platform) {
   const recommended = document.querySelector(`[data-recommended="${platform}"]`);
