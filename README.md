@@ -1,6 +1,6 @@
-# Phone Trackpad Downloads
+# PhoneAsTrackpad Downloads
 
-Phone Trackpad의 macOS·Windows 컴퓨터 연결 앱 공개 다운로드 사이트입니다.
+PhoneAsTrackpad의 macOS·Windows 컴퓨터 연결 앱 공개 다운로드 사이트입니다.
 
 - Website: https://wonheejang.github.io/iphone2trackpad-downloads/
 - Releases: https://github.com/WONHEEJANG/iphone2trackpad-downloads/releases

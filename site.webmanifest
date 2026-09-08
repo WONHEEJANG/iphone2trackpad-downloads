@@ -1,6 +1,6 @@
 {
-  "name": "Phone Trackpad",
-  "short_name": "Trackpad",
+  "name": "폰으로 트랙패드",
+  "short_name": "PhoneAsTrackpad",
   "icons": [
     {
       "src": "assets/icon-192.png",
