@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="iPhone을 Mac과 Windows PC의 무선 트랙패드로 바꿔주는 Phone Trackpad 리시버를 다운로드하세요."
+      content="iPhone을 Mac과 Windows PC의 무선 트랙패드로 바꿔주는 Phone Trackpad 컴퓨터 연결 앱을 다운로드하세요."
     />
     <meta name="theme-color" content="#ff5a1f" />
-    <meta name="theme-color" content="#07111f" media="(prefers-color-scheme: dark)" />
-    <meta property="og:title" content="Phone Trackpad — Receiver 다운로드" />
+    <meta name="theme-color" content="#1f1e1c" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content="Phone Trackpad — 컴퓨터 연결 앱 다운로드" />
     <meta
       property="og:description"
       content="iPhone의 손끝을 Mac과 Windows의 트랙패드로."
     />
-    <title>Phone Trackpad — Receiver 다운로드</title>
+    <title>Phone Trackpad — 컴퓨터 연결 앱 다운로드</title>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
@@ -26,12 +26,7 @@
 
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Phone Trackpad 홈">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" role="img">
-            <rect x="4.5" y="3.5" width="23" height="25" rx="7" />
-            <path d="M16 9v5M10.5 13.5l3.2 3.2M21.5 13.5l-3.2 3.2M9 20h14" />
-          </svg>
-        </span>
+        <span class="brand-mark" aria-hidden="true"><img src="assets/icon-192.png" alt="" /></span>
         <span>Phone Trackpad</span>
       </a>
       <nav aria-label="주요 메뉴">
@@ -45,7 +40,7 @@
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <div class="eyebrow"><span></span> 같은 Wi-Fi면 바로 연결</div>
+          <div class="eyebrow"><span></span> Mac과 Windows에 간편하게 연결</div>
           <h1 id="hero-title">iPhone의 손끝을<br /><em>컴퓨터 트랙패드로.</em></h1>
           <p class="hero-lead">
             별도 장비 없이 Mac과 Windows를 자연스럽게 조작하세요. 포인터, 클릭,
@@ -54,7 +49,7 @@
           <div class="hero-actions">
             <a class="button button-primary" id="smart-download" href="#downloads">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 20h14" /></svg>
-              <span>Receiver 다운로드</span>
+              <span>컴퓨터 연결 앱 받기</span>
             </a>
             <a class="button button-quiet" href="#guide">설치 방법 보기</a>
           </div>
@@ -75,8 +70,11 @@
           <div class="phone">
             <div class="phone-island"></div>
             <div class="phone-status"><i></i> 연결됨</div>
-            <div class="gesture-lines"><span></span><span></span><span></span></div>
-            <p>밀어서 이동</p>
+            <div class="phone-trackpad">밀어서 포인터 이동</div>
+            <div class="shortcut-preview" aria-hidden="true">
+              <span>1</span><span>2</span><span>3</span>
+              <span>⌘ C</span><span>⌘ V</span><span>Enter</span>
+            </div>
           </div>
           <div class="connection-wave wave-one"></div>
           <div class="connection-wave wave-two"></div>
@@ -92,16 +90,16 @@
       </section>
 
       <section class="trust-strip" aria-label="제품 핵심 특성">
-        <div><strong>로컬 연결</strong><span>입력은 같은 네트워크 안에서 전송</span></div>
+        <div><strong>컴퓨터 연결 앱 실행</strong><span>Mac 또는 Windows에서 먼저 켜 주세요</span></div>
         <div><strong>멀티터치</strong><span>Mac과 Windows 제스처 지원</span></div>
         <div><strong>진단 로그</strong><span>문제 상황을 복사해 빠르게 확인</span></div>
       </section>
 
       <section class="section downloads" id="downloads" aria-labelledby="download-title">
         <div class="section-heading">
-          <span class="section-kicker">RECEIVER</span>
+          <span class="section-kicker">COMPUTER APP</span>
           <h2 id="download-title">내 컴퓨터에 맞는 버전을 받으세요</h2>
-          <p>Receiver를 먼저 실행한 뒤 iPhone 앱에서 표시되는 컴퓨터를 선택하면 됩니다.</p>
+          <p>컴퓨터 연결 앱을 먼저 켠 뒤 iPhone에 표시되는 컴퓨터를 선택하면 됩니다.</p>
         </div>
 
         <div class="download-grid">
@@ -111,7 +109,7 @@
               <svg viewBox="0 0 24 24"><path d="M16.8 12.7c0-2.5 2.1-3.7 2.2-3.8a4.8 4.8 0 0 0-3.8-2c-1.6-.2-3.2 1-4 1-1 0-2.4-1-3.9-1-2 0-3.9 1.2-5 3.1-2.1 3.7-.5 9.1 1.5 12.1 1 1.5 2.2 3.1 3.8 3 1.5-.1 2.1-1 3.9-1 1.8 0 2.3 1 3.9 1 1.6 0 2.7-1.5 3.7-3 1.2-1.7 1.7-3.4 1.7-3.5-.1 0-4-1.5-4-5.9ZM14.1 5.2c.9-1.1 1.5-2.6 1.3-4.1-1.3.1-2.8.9-3.7 2-.8.9-1.5 2.4-1.3 3.9 1.4.1 2.8-.7 3.7-1.8Z" /></svg>
             </div>
             <div class="card-copy">
-              <div class="title-row"><h3>Mac용 Receiver</h3><span>Apple Silicon · Intel</span></div>
+              <div class="title-row"><h3>Mac용 연결 앱</h3><span>Apple Silicon · Intel</span></div>
               <p>Mission Control, 데스크탑 전환, 확대·축소 등 macOS 제스처에 맞게 동작합니다.</p>
               <ul>
                 <li>macOS 14 Sonoma 이상</li>
@@ -136,7 +134,7 @@
               <svg viewBox="0 0 24 24"><path d="m3 5.4 7.3-1v7H3v-6Zm8.3-1.1L21 3v8.4h-9.7V4.3ZM3 12.6h7.3v7L3 18.6v-6Zm8.3 0H21V21l-9.7-1.3v-7.1Z" /></svg>
             </div>
             <div class="card-copy">
-              <div class="title-row"><h3>Windows용 Receiver</h3><span>x64 기본</span></div>
+              <div class="title-row"><h3>Windows용 연결 앱</h3><span>x64 기본</span></div>
               <p>작업 보기, 앱 전환, 가상 데스크톱 이동 등 Windows 제스처를 지원합니다.</p>
               <ul>
                 <li>Windows 10 22H2 / 11</li>
@@ -176,9 +174,10 @@
         <div class="feature-grid">
           <article><span class="feature-number">01</span><h3>정확한 기본 조작</h3><p>포인터 이동, 좌·우클릭, 더블 클릭, 스크롤과 드래그 앤 드롭을 지원합니다.</p></article>
           <article><span class="feature-number">02</span><h3>운영체제 제스처</h3><p>세 손가락과 네 손가락 스와이프를 각 운영체제의 화면 전환 동작으로 연결합니다.</p></article>
-          <article><span class="feature-number">03</span><h3>안전한 로컬 연결</h3><p>같은 Wi-Fi에서 직접 연결하며 Windows는 TLS와 최초 6자리 코드로 페어링합니다.</p></article>
+          <article><span class="feature-number">03</span><h3>안전한 로컬 연결</h3><p>기기끼리 직접 연결하며 Windows는 같은 네트워크에서 TLS와 최초 6자리 코드로 페어링합니다.</p></article>
           <article><span class="feature-number">04</span><h3>iPhone 키보드 입력</h3><p>시스템 키보드로 작성한 한글, 영문과 이모지를 컴퓨터의 현재 입력란으로 전송합니다.</p></article>
-          <article><span class="feature-number">05</span><h3>보이는 연결 상태</h3><p>연결 상태와 입력 로그를 Receiver에서 확인하고 한 번에 복사할 수 있습니다.</p></article>
+          <article><span class="feature-number">05</span><h3>바로 쓰는 빠른 입력</h3><p>숫자 1·2·3, 복사, 붙여넣기와 Enter를 트랙패드 아래 버튼으로 바로 입력합니다.</p></article>
+          <article><span class="feature-number">06</span><h3>보이는 연결 상태</h3><p>연결 상태와 입력 기록을 컴퓨터 연결 앱에서 확인하고 한 번에 복사할 수 있습니다.</p></article>
         </div>
       </section>
 
@@ -197,20 +196,20 @@
 
           <div class="install-panel" id="mac-install" role="tabpanel" aria-labelledby="mac-tab" data-panel="mac">
             <ol>
-              <li><span>1</span><div><h3>다운로드하고 열기</h3><p>ZIP 압축을 푼 뒤 <b>TrackpadReceiver</b>를 응용 프로그램 폴더로 옮겨 실행합니다.</p></div></li>
-              <li><span>2</span><div><h3>손쉬운 사용 허용</h3><p><b>시스템 설정 → 개인정보 보호 및 보안 → 손쉬운 사용</b>에서 Receiver를 켭니다.</p></div></li>
-              <li><span>3</span><div><h3>iPhone에서 연결</h3><p>같은 Wi-Fi에 연결하고 iPhone 앱에 나타난 Mac을 선택합니다.</p></div></li>
+              <li><span>1</span><div><h3>연결 앱 열기</h3><p>ZIP 압축을 푼 뒤 <b>Phone Trackpad 연결 앱</b>을 응용 프로그램 폴더로 옮겨 켭니다.</p></div></li>
+              <li><span>2</span><div><h3>마우스 조작 허용</h3><p><b>시스템 설정 → 개인정보 보호 및 보안 → 손쉬운 사용</b>에서 연결 앱을 허용합니다.</p></div></li>
+              <li><span>3</span><div><h3>iPhone에서 선택</h3><p>두 기기의 Wi-Fi를 켜고 iPhone 앱에 나타난 Mac을 누릅니다.</p></div></li>
             </ol>
             <aside><strong>처음 실행이 막히나요?</strong><p>Finder에서 앱을 Control-클릭한 뒤 <b>열기</b>를 선택하세요. 앱 배포 서명 전 프리뷰에서는 macOS 확인 창이 표시될 수 있습니다.</p></aside>
           </div>
 
           <div class="install-panel" id="windows-install" role="tabpanel" aria-labelledby="windows-tab" data-panel="windows" hidden>
             <ol>
-              <li><span>1</span><div><h3>압축 풀고 실행</h3><p>ZIP 파일 전체의 압축을 푼 뒤 <b>TrackpadReceiver.Windows.exe</b>를 실행합니다.</p></div></li>
+              <li><span>1</span><div><h3>연결 앱 열기</h3><p>ZIP 파일 전체의 압축을 푼 뒤 <b>Phone Trackpad 연결 앱</b>을 켭니다.</p></div></li>
               <li><span>2</span><div><h3>네트워크 접근 허용</h3><p>Windows 방화벽 알림에서 <b>개인 네트워크</b> 접근을 허용합니다.</p></div></li>
-              <li><span>3</span><div><h3>6자리 코드로 연결</h3><p>iPhone 앱에서 PC를 선택하고 Receiver 화면의 페어링 코드를 입력합니다.</p></div></li>
+              <li><span>3</span><div><h3>6자리 코드 입력</h3><p>iPhone에서 PC를 누르고 컴퓨터 연결 앱에 표시된 코드를 입력합니다.</p></div></li>
             </ol>
-            <aside><strong>PC가 보이지 않나요?</strong><p>Receiver에 표시된 IP 주소를 확인한 뒤 iPhone 앱에서 <b>Windows IP로 직접 연결</b>을 선택하세요.</p></aside>
+            <aside><strong>PC가 보이지 않나요?</strong><p>컴퓨터 연결 앱에 표시된 IP 주소를 확인한 뒤 iPhone에서 <b>Windows IP로 직접 연결</b>을 선택하세요.</p></aside>
           </div>
         </div>
       </section>
@@ -221,21 +220,21 @@
           <h2 id="faq-title">자주 묻는 질문</h2>
         </div>
         <div class="faq-list">
-          <details><summary>iPhone과 컴퓨터가 서로 보이지 않아요.<span></span></summary><p>두 기기가 같은 Wi-Fi에 연결되어 있는지 확인하세요. 게스트 Wi-Fi처럼 기기 간 통신을 막는 네트워크에서는 자동 검색이 되지 않을 수 있습니다. Windows는 IP 직접 연결도 사용할 수 있습니다.</p></details>
-          <details><summary>연결됐는데 커서가 움직이지 않아요.<span></span></summary><p>Mac은 손쉬운 사용 권한을 확인하고, Windows는 Receiver를 조작하려는 앱과 같은 권한 수준으로 실행하세요. Receiver의 로그 복사 버튼으로 진단 내용을 공유할 수 있습니다.</p></details>
+          <details><summary>iPhone과 컴퓨터가 서로 보이지 않아요.<span></span></summary><p>먼저 컴퓨터 연결 앱이 켜져 있는지 확인하세요. Mac은 두 기기의 Wi-Fi를 켜고 가까이 두세요. Windows는 iPhone과 같은 네트워크에 연결해야 합니다.</p></details>
+          <details><summary>연결됐는데 커서가 움직이지 않아요.<span></span></summary><p>Mac은 손쉬운 사용 권한을 확인하고, Windows는 연결 앱을 조작하려는 앱과 같은 권한 수준으로 실행하세요. 연결 앱의 로그 복사 버튼으로 진단 내용을 공유할 수 있습니다.</p></details>
           <details><summary>인터넷이 없어도 사용할 수 있나요?<span></span></summary><p>네. iPhone과 컴퓨터가 서로 통신할 수 있는 같은 로컬 네트워크에 있으면 입력 전송에 인터넷은 필요하지 않습니다.</p></details>
           <details><summary>Windows ARM PC에서도 동작하나요?<span></span></summary><p>ARM64 전용 배포 파일을 제공합니다. Snapdragon 기반 Windows PC라면 다운로드 카드의 ARM64 버전을 선택하세요.</p></details>
         </div>
       </section>
 
       <section class="final-cta">
-        <div><span class="section-kicker">READY WHEN YOU ARE</span><h2>이제 iPhone을 트랙패드로.</h2><p>Receiver를 설치하고 같은 Wi-Fi에서 바로 시작하세요.</p></div>
+        <div><span class="section-kicker">READY WHEN YOU ARE</span><h2>이제 iPhone을 트랙패드로.</h2><p>컴퓨터 연결 앱을 켜고 바로 시작하세요.</p></div>
         <a class="button button-light" href="#downloads">내 컴퓨터용 다운로드</a>
       </section>
     </main>
 
     <footer>
-      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="4.5" y="3.5" width="23" height="25" rx="7" /><path d="M16 9v5M10.5 13.5l3.2 3.2M21.5 13.5l-3.2 3.2M9 20h14" /></svg></span><span>Phone Trackpad</span></a>
+      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><img src="assets/icon-192.png" alt="" /></span><span>Phone Trackpad</span></a>
       <p>iPhone을 Mac과 Windows의 무선 트랙패드로.</p>
       <div><a href="privacy.html">개인정보 처리방침</a><a href="https://github.com/WONHEEJANG/iphone2trackpad-downloads/releases">Releases</a><a href="https://github.com/WONHEEJANG/iphone2trackpad-downloads/issues">문제 신고</a></div>
     </footer>

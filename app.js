@@ -45,7 +45,7 @@ if (platform) {
 
   if (download && smartDownload) {
     smartDownload.href = download.href;
-    smartDownload.querySelector("span").textContent = platform === "mac" ? "Mac용 Receiver 다운로드" : "Windows용 Receiver 다운로드";
+    smartDownload.querySelector("span").textContent = platform === "mac" ? "Mac용 연결 앱 다운로드" : "Windows용 연결 앱 다운로드";
   }
 }
 
