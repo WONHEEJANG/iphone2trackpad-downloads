@@ -125,7 +125,7 @@
               Mac용 다운로드
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v10m0 0 4-4m-4 4-4-4M5 20h14" /></svg>
             </a>
-            <a class="install-link" href="#mac-install">Mac 설치 방법 <span>→</span></a>
+            <a class="install-link" href="#mac-first-open">처음 실행 경고 해결 · Mac 설치 방법 <span>→</span></a>
           </article>
 
           <article class="download-card" data-platform-card="windows">
@@ -196,11 +196,16 @@
 
           <div class="install-panel" id="mac-install" role="tabpanel" aria-labelledby="mac-tab" data-panel="mac">
             <ol>
-              <li><span>1</span><div><h3>연결 앱 열기</h3><p>ZIP 압축을 푼 뒤 <b>PhoneAsTrackpad 연결 앱</b>을 응용 프로그램 폴더로 옮겨 켭니다.</p></div></li>
-              <li><span>2</span><div><h3>마우스 조작 허용</h3><p><b>시스템 설정 → 개인정보 보호 및 보안 → 손쉬운 사용</b>에서 연결 앱을 허용합니다.</p></div></li>
-              <li><span>3</span><div><h3>iPhone에서 선택</h3><p>두 기기의 Wi-Fi를 켜고 iPhone 앱에 나타난 Mac을 누릅니다.</p></div></li>
+              <li><span>1</span><div><h3>압축 풀고 한 번 열기</h3><p>ZIP 압축을 푼 뒤 <b>TrackpadReceiver</b>를 응용 프로그램 폴더로 옮겨 실행합니다. 경고가 나오면 <b>완료</b>를 누릅니다.</p></div></li>
+              <li><span>2</span><div><h3>그래도 열기</h3><p><b>시스템 설정 → 개인정보 보호 및 보안</b>을 열고 아래쪽 보안 영역에서 <b>그래도 열기</b>를 누른 다음 다시 <b>열기</b>를 선택합니다.</p></div></li>
+              <li><span>3</span><div><h3>마우스 조작 허용</h3><p>같은 설정 화면의 <b>손쉬운 사용</b>에서 TrackpadReceiver를 켭니다.</p></div></li>
+              <li><span>4</span><div><h3>iPhone에서 선택</h3><p>두 기기의 Wi-Fi를 켜고 iPhone 앱에 나타난 Mac을 누릅니다.</p></div></li>
             </ol>
-            <aside><strong>처음 실행이 막히나요?</strong><p>Finder에서 앱을 Control-클릭한 뒤 <b>열기</b>를 선택하세요. 앱 배포 서명 전 프리뷰에서는 macOS 확인 창이 표시될 수 있습니다.</p></aside>
+            <aside class="gatekeeper-help" id="mac-first-open">
+              <strong>“Apple이 악성 소프트웨어가 있는지 확인할 수 없습니다”가 나오나요?</strong>
+              <p>휴지통으로 이동하지 말고 <b>완료</b>를 누르세요. 바로 이어서 <b>시스템 설정 → 개인정보 보호 및 보안 → 그래도 열기 → 열기</b> 순서로 진행하면 이후부터는 일반 앱처럼 실행됩니다. 이 보안 예외는 신뢰할 수 있는 이 페이지에서 직접 받은 파일에만 허용하세요.</p>
+              <a href="https://support.apple.com/ko-kr/102445" target="_blank" rel="noreferrer">Apple 공식 안내 ↗</a>
+            </aside>
           </div>
 
           <div class="install-panel" id="windows-install" role="tabpanel" aria-labelledby="windows-tab" data-panel="windows" hidden>
@@ -220,6 +225,7 @@
           <h2 id="faq-title">자주 묻는 질문</h2>
         </div>
         <div class="faq-list">
+          <details><summary>Mac에서 “Apple이 악성 소프트웨어가 있는지 확인할 수 없습니다”라고 나와요.<span></span></summary><p>경고에서 <b>완료</b>를 누른 뒤 <b>시스템 설정 → 개인정보 보호 및 보안</b>으로 이동하세요. 아래쪽 보안 영역에서 TrackpadReceiver의 <b>그래도 열기</b>를 누르고, 다시 나타나는 창에서 <b>열기</b>를 선택하면 됩니다.</p></details>
           <details><summary>iPhone과 컴퓨터가 서로 보이지 않아요.<span></span></summary><p>먼저 컴퓨터 연결 앱이 켜져 있는지 확인하세요. Mac은 두 기기의 Wi-Fi를 켜고 가까이 두세요. Windows는 iPhone과 같은 네트워크에 연결해야 합니다.</p></details>
           <details><summary>연결됐는데 커서가 움직이지 않아요.<span></span></summary><p>Mac은 손쉬운 사용 권한을 확인하고, Windows는 연결 앱을 조작하려는 앱과 같은 권한 수준으로 실행하세요. 연결 앱의 로그 복사 버튼으로 진단 내용을 공유할 수 있습니다.</p></details>
           <details><summary>인터넷이 없어도 사용할 수 있나요?<span></span></summary><p>네. iPhone과 컴퓨터가 서로 통신할 수 있는 같은 로컬 네트워크에 있으면 입력 전송에 인터넷은 필요하지 않습니다.</p></details>

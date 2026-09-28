@@ -130,7 +130,7 @@ h1 em { color: var(--blue); font-style: normal; }
 .platform-tabs button[aria-selected="true"] { background: var(--surface); color: var(--text); box-shadow: 0 3px 12px rgba(39,60,90,.1); }
 .install-panel { padding: 46px; }
 .install-panel[hidden] { display: none; }
-.install-panel ol { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin: 0; padding: 0; list-style: none; }
+.install-panel ol { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 28px; margin: 0; padding: 0; list-style: none; }
 .install-panel li { display: grid; grid-template-columns: 34px 1fr; gap: 13px; }
 .install-panel li > span { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 50%; background: var(--surface-soft); color: var(--blue); font-size: 12px; font-weight: 850; }
 .install-panel h3 { margin: 5px 0 10px; font-size: 16px; }
@@ -138,6 +138,8 @@ h1 em { color: var(--blue); font-style: normal; }
 .install-panel aside { display: flex; align-items: baseline; gap: 14px; margin-top: 38px; padding: 18px 20px; border-radius: 14px; background: #f3f7fc; }
 .install-panel aside strong { flex: 0 0 auto; color: #344054; font-size: 12px; }
 .install-panel aside p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.install-panel aside a { flex: 0 0 auto; color: var(--blue); font-size: 12px; font-weight: 750; white-space: nowrap; }
+.gatekeeper-help { scroll-margin-top: 92px; border: 1px solid rgba(255,92,31,.22); background: #fff5f0 !important; }
 
 .faq { max-width: 860px; }
 .faq-list { border-top: 1px solid var(--line); }
@@ -228,4 +230,7 @@ footer > div a:hover { color: var(--blue); }
   .windows-icon { background: #442a20; }
   .install-panel aside { background: #36312d; }
   .install-panel aside strong { color: #f5ece5; }
+  .install-panel .gatekeeper-help { border-color: rgba(255,141,97,.36); background: #3b261e !important; }
+  .install-panel .gatekeeper-help strong { color: #fff7f2; }
+  .install-panel .gatekeeper-help p { color: #dbcac0; }
 }
