@@ -125,7 +125,7 @@
               Mac용 다운로드
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v10m0 0 4-4m-4 4-4-4M5 20h14" /></svg>
             </a>
-            <a class="install-link" href="#mac-first-open">처음 실행 경고 해결 · Mac 설치 방법 <span>→</span></a>
+            <a class="install-link" href="#mac-first-open">Mac 설치 및 권한 설정 <span>→</span></a>
           </article>
 
           <article class="download-card" data-platform-card="windows">
@@ -174,7 +174,7 @@
         <div class="feature-grid">
           <article><span class="feature-number">01</span><h3>정확한 기본 조작</h3><p>포인터 이동, 좌·우클릭, 더블 클릭, 스크롤과 드래그 앤 드롭을 지원합니다.</p></article>
           <article><span class="feature-number">02</span><h3>운영체제 제스처</h3><p>세 손가락과 네 손가락 스와이프를 각 운영체제의 화면 전환 동작으로 연결합니다.</p></article>
-          <article><span class="feature-number">03</span><h3>안전한 로컬 연결</h3><p>기기끼리 직접 연결하며 Windows는 같은 네트워크에서 TLS와 최초 6자리 코드로 페어링합니다.</p></article>
+          <article><span class="feature-number">03</span><h3>안전한 로컬 연결</h3><p>같은 Wi-Fi에서 직접 연결합니다. Mac에서는 연결 요청을 승인하고, Windows에서는 처음 연결할 때 6자리 코드로 페어링합니다.</p></article>
           <article><span class="feature-number">04</span><h3>iPhone 키보드 입력</h3><p>시스템 키보드로 작성한 한글, 영문과 이모지를 컴퓨터의 현재 입력란으로 전송합니다.</p></article>
           <article><span class="feature-number">05</span><h3>바로 쓰는 빠른 입력</h3><p>숫자 1·2·3, 복사, 붙여넣기와 Enter를 트랙패드 아래 버튼으로 바로 입력합니다.</p></article>
           <article><span class="feature-number">06</span><h3>보이는 연결 상태</h3><p>연결 상태와 입력 기록을 컴퓨터 연결 앱에서 확인하고 한 번에 복사할 수 있습니다.</p></article>
@@ -197,14 +197,13 @@
           <div class="install-panel" id="mac-install" role="tabpanel" aria-labelledby="mac-tab" data-panel="mac">
             <ol>
               <li><span>1</span><div><h3>DMG 열고 설치</h3><p>다운로드한 DMG를 열고 <b>PhoneAsTrackpad 연결 앱</b>을 오른쪽의 <b>응용 프로그램</b> 폴더로 드래그합니다.</p></div></li>
-              <li><span>2</span><div><h3>응용 프로그램에서 열기</h3><p>DMG 창은 닫고 <b>응용 프로그램</b> 폴더에 설치된 앱을 실행합니다. 경고가 나오면 아래 안내대로 열어 주세요.</p></div></li>
+              <li><span>2</span><div><h3>응용 프로그램에서 열기</h3><p>DMG 창을 닫고 <b>응용 프로그램</b> 폴더에 설치된 앱을 실행합니다. 처음 실행할 때 열기 확인이 나오면 <b>열기</b>를 누릅니다.</p></div></li>
               <li><span>3</span><div><h3>마우스 조작 허용</h3><p><b>시스템 설정 → 개인정보 보호 및 보안 → 손쉬운 사용</b>에서 PhoneAsTrackpad 연결 앱을 켭니다.</p></div></li>
-              <li><span>4</span><div><h3>iPhone에서 선택</h3><p>두 기기의 Wi-Fi를 켜고 iPhone 앱에 나타난 Mac을 누릅니다.</p></div></li>
+              <li><span>4</span><div><h3>iPhone에서 선택하고 Mac에서 허용</h3><p>두 기기를 같은 Wi-Fi에 연결하세요. iPhone 앱에서 Mac을 선택하고 Mac 연결 앱에 뜨는 요청에서 <b>허용</b>을 누릅니다.</p></div></li>
             </ol>
             <aside class="gatekeeper-help" id="mac-first-open">
-              <strong>“Apple이 악성 소프트웨어가 있는지 확인할 수 없습니다”가 나오나요?</strong>
-              <p>휴지통으로 이동하지 말고 <b>완료</b>를 누르세요. 바로 이어서 <b>시스템 설정 → 개인정보 보호 및 보안 → 그래도 열기 → 열기</b> 순서로 진행하면 이후부터는 일반 앱처럼 실행됩니다. 이 보안 예외는 신뢰할 수 있는 이 페이지에서 직접 받은 파일에만 허용하세요.</p>
-              <a href="https://support.apple.com/ko-kr/102445" target="_blank" rel="noreferrer">Apple 공식 안내 ↗</a>
+              <strong>Apple 공증을 받은 Mac 연결 앱</strong>
+              <p>최신 Mac DMG는 Developer ID로 서명하고 Apple 공증을 받았습니다. 이전 버전이 실행 중이라면 종료한 뒤 새 앱으로 교체하세요.</p>
             </aside>
           </div>
 
@@ -225,7 +224,7 @@
           <h2 id="faq-title">자주 묻는 질문</h2>
         </div>
         <div class="faq-list">
-          <details><summary>Mac에서 “Apple이 악성 소프트웨어가 있는지 확인할 수 없습니다”라고 나와요.<span></span></summary><p>경고에서 <b>완료</b>를 누른 뒤 <b>시스템 설정 → 개인정보 보호 및 보안</b>으로 이동하세요. 아래쪽 보안 영역에서 TrackpadReceiver의 <b>그래도 열기</b>를 누르고, 다시 나타나는 창에서 <b>열기</b>를 선택하면 됩니다.</p></details>
+          <details><summary>Mac에서 앱을 확인할 수 없다는 경고가 나와요.<span></span></summary><p>이 페이지에서 최신 Mac DMG를 다시 받고, 응용 프로그램 폴더에서 새로 설치한 앱을 실행하세요.</p></details>
           <details><summary>iPhone과 컴퓨터가 서로 보이지 않아요.<span></span></summary><p>먼저 컴퓨터 연결 앱이 켜져 있는지 확인하세요. Mac은 두 기기의 Wi-Fi를 켜고 가까이 두세요. Windows는 iPhone과 같은 네트워크에 연결해야 합니다.</p></details>
           <details><summary>연결됐는데 커서가 움직이지 않아요.<span></span></summary><p>Mac은 손쉬운 사용 권한을 확인하고, Windows는 연결 앱을 조작하려는 앱과 같은 권한 수준으로 실행하세요. 연결 앱의 로그 복사 버튼으로 진단 내용을 공유할 수 있습니다.</p></details>
           <details><summary>인터넷이 없어도 사용할 수 있나요?<span></span></summary><p>네. iPhone과 컴퓨터가 서로 통신할 수 있는 같은 로컬 네트워크에 있으면 입력 전송에 인터넷은 필요하지 않습니다.</p></details>
