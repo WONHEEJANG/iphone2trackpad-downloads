@@ -234,3 +234,12 @@ footer > div a:hover { color: var(--blue); }
   .install-panel .gatekeeper-help strong { color: #fff7f2; }
   .install-panel .gatekeeper-help p { color: #dbcac0; }
 }
+
+#site-language {
+  color: var(--text, inherit);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px;
+  font: inherit;
+}
